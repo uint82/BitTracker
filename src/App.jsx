@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         color: "white",
       }}
     >
+      <Navbar />
       <div className="container mx-auto px-4">
         <Routes>
           <Route path="/" element={<Home />} />

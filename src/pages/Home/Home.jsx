@@ -25,8 +25,6 @@ const Home = () => {
 
   const searchHandler = async (event) => {
     event.preventDefault();
-    // This is now optional since filtering happens in real-time
-    // But keeping it for form submission consistency
     if (input === "") {
       setDisplayCoin(allCoin);
     } else {
@@ -39,7 +37,6 @@ const Home = () => {
     }
   };
 
-  // Clear search function
   const clearSearch = () => {
     setInput("");
     setDisplayCoin(allCoin);
@@ -108,7 +105,7 @@ const Home = () => {
                 </option>
               ))}
             </datalist>
-            {/* Clear button */}
+
             {input && (
               <button
                 type="button"
@@ -154,7 +151,6 @@ const Home = () => {
           </button>
         </form>
 
-        {/* Search results info */}
         {input && (
           <div className="text-sm text-gray-300">
             {displayCoin.length === 0 ? (
