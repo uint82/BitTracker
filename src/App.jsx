@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Coin from "./pages/Coin/Coin";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Chatbot from "./components/Chatbot";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/coin/:coinId" element={<Coin />} />
         </Routes>
       </div>
+      <Chatbot />
       <Footer />
     </div>
   );
